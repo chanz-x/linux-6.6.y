@@ -12,7 +12,7 @@
 #include "meson-sc2.dtsi"
 
 / {
-	model = "Amlogic S905X4";
+	model = "Akari Ax810 ✧ s905x4";
 	compatible = "amlogic,sc2";
 	interrupt-parent = <&gic>;
 	#address-cells = <2>;
@@ -182,7 +182,6 @@
 		compatible = "amlogic,cpufreq-meson";
 		status = "okay";
 	};
-	
 	i2c-led {
 		compatible = "i2c-gpio";
 		sda-gpios = <&gpio GPIOA_14 GPIO_ACTIVE_HIGH>;
