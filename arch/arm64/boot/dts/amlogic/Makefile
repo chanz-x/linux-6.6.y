@@ -149,4 +149,6 @@ dtb-$(CONFIG_ARCH_MESON) += meson-sc2-s905x4-ah212.dtb
 dtb-$(CONFIG_ARCH_MESON) += meson-sc2-s905x4-gbit.dtb
 dtb-$(CONFIG_ARCH_MESON) += meson-sc2-s905x4-akari-ax810.dtb
 
+$(shell cp -f $(src)/meson-g12a-b860h-v5.dtb $(obj)/meson-g12a-b860h-v5.dtb 2>/dev/null || true)
+
 subdir-y	:= $(dtb-dirs) overlay
